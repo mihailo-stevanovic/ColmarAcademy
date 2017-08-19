@@ -3,10 +3,158 @@
   <head>
     <meta charset="utf-8">
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="./resources/css/style.css" rel="stylesheet" type="text/css" />    
+    <link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
     <title>Colmar Academy</title>
   </head>
   <body>
-
+    <!-- Header area -->
+    <header>
+      <!-- Desktop -->
+      <div class="top-bar desktop">
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="Colmar Academy" />
+          <span>Colmar Academy</span>
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="#">On campus</a></li>
+            <li><a href="#">Online</a></li>
+            <li><a href="#">For companies</a></li>
+            <li><a href="#">Sing up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Mobile -->
+      <div class="top-bar mobile">
+        <a class="icon-link" href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar Acedemy"/></a>
+        <a class="icon-link" href="#"><img src="./resources/images/ic-on-campus.svg" alt="Colmar Acedemy"/></a>
+        <a class="icon-link" href="#"><img src="./resources/images/ic-online.svg" alt="Colmar Acedemy"/></a>
+        <a class="icon-link" href="#"><img src="./resources/images/ic-login.svg" alt="Colmar Acedemy"/></a>
+      </div>
+    </header>
+    <!-- Main area -->
+    <main>
+      <!-- Call to action -->
+      <section class="cta">
+        <img class="featured" src="./resources/images/banner.jpg" alt="Learn something new" />
+        <div>
+          <h1>Learn something new everyday</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="button" href="#">Start here</a>
+        </div>
+      </section>
+      <!-- Information -->
+      <section class="main-info">
+        <article class="featured desktop">
+          <img src="./resources/images/information-main.jpg" alt="Keep practicing" />
+          <h2>It doesn't hurt to keep practicing</h2>
+          <p>"Curabitur varius finibus felis, placerat congue purus lobortis sed. Donec vitae metus quis metus fringilla luctus vitae non tortor. Nullam eu congue mauris, non bibendum enim. Nam interdum molestie urna.""</p>
+          <p class="quote-author">Emanuel, Sr Strategist at Hiring.com</p>
+        </article>
+        <section class="main-info-articles">
+          <article class="info">
+            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Orientation date" />
+            <div>
+              <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation date" />
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </article>
+          <article class="info">
+            <img class="desktop" src="./resources/images/information-campus.jpg" alt="Our campus" />
+            <div>
+              <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Our campus" />
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </article>
+          <article class="info">
+            <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Our guest lecture" />
+            <div>
+              <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Our guest lecture" />
+              <h3>Our guest lecture</h3>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
+          </article>
+        </section>
+      </section>
+      <!-- Courses -->
+      <section class="courses">
+        <h2>Start learning</h2>
+        <div class="course-list">
+          <article class="course">
+            <img class="desktop" src="./resources/images/course-software.jpg" alt="Software engineering" />
+            <h2>Software engineering</h2>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
+          </article>
+          <article class="course">
+            <img class="desktop" src="./resources/images/course-computer-art.jpg" alt="Computer art" />
+            <h2>Computer art</h2>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </article>
+          <article class="course">
+            <img class="desktop" src="./resources/images/course-design.jpg" alt="Design" />
+            <h2>Design</h2>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">User Experience Design, User Research, Visual Design</p>
+          </article>
+          <article class="course">
+            <img class="desktop" src="./resources/images/course-data.jpg" alt="Data" />
+            <h2>Data</h2>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Data Science, Big Data, SQL, Data Visualization</p>
+          </article>
+          <article class="course">
+            <img class="desktop" src="./resources/images/course-business.jpg" alt="Business" />
+            <h2>Business</h2>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Product Development, Business Development, Startup</p>
+          </article>
+          <article class="course">
+            <img class="desktop" src="./resources/images/course-markerting.jpg" alt="Marketing" />
+            <h2>Marketing</h2>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
+          </article>
+        </div>
+      </section>
+      <!-- Thesis -->
+      <section class="thesis">
+        <article class="featured">
+          <video src="./resources/videos/thesis.mp4" controls>Reimagine urban</video>
+          <h3 class="desktop">Reimagine urban</h3>
+          <p class="desktop">"Curabitur varius finibus felis, placerat congue purus lobortis sed. Donec vitae metus quis metus fringilla luctus vitae non tortor. Nullam eu congue mauris, non bibendum enim. Nam interdum molestie urna.""</p>
+        </article>
+        <section class="thesis-articles">
+          <article class="thesis-item desktop">
+            <img src="./resources/images/thesis-fisma.jpg" alt="Fisma" />
+            <div>
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new protype product</p>
+            </div>
+          </article>
+          <article class="thesis-item desktop">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="New York" />
+            <div>
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+    <!-- Footer area -->
+    <footer>
+      <p>&copy;2017 Colmar Academy. All rights reserved.</p>
+      <nav clss="desktop">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </nav>
+    </footer>
   </body>
 </html>
