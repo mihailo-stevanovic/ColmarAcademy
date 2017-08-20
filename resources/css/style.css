@@ -163,6 +163,22 @@ article.item p, article.item a{
   margin-top: 2rem;
 }
 
+/* Footer */
+footer{
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+footer p{
+  margin-left: 1.5rem;
+}
+footer nav{
+  margin-right: 0.5rem;
+}
+footer nav a{
+  text-decoration: none;
+  margin: 0 0.15rem;
+}
+
 /* Mobile */
 .mobile{
   display: none;
@@ -257,5 +273,9 @@ article.item p, article.item a{
   }
   .thesis-container{
     display: block;
+  }
+  /* Footer */
+  footer p{
+    font-size: 0.9rem;
   }
 }
