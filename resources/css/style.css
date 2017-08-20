@@ -9,6 +9,14 @@ h1{
   font-size: 2.5rem;
   margin: 1rem 0;
 }
+h2{
+  font-size: 2rem;
+  margin: 2rem 0 1.5rem 0;
+}
+h3{
+  font-size: 1.75rem;
+  margin: 0.25rem 0;
+}
 
 
 .flex, .flex-align-center, .flex-column-space-between{
@@ -70,6 +78,37 @@ h1{
   padding: 0.5rem 0;
 }
 
+/* Information */
+.main-info article.featured p.quote-author{
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.main-info article.featured img{
+  width: 100%;
+}
+.main-info-articles{
+  width: 40%;
+  margin: 1rem 0;
+  border-left: solid 1px gray;
+}
+.info{
+  padding: 1rem;
+}
+.info:nth-child(2n+0){
+  border-top: double 0.2rem gray;
+  border-bottom: double 0.2rem gray;
+}
+.info img.desktop{
+  max-width: 35%;
+  height: auto;
+  margin-right: 1rem;
+
+}
+.info p, .info a{
+  text-decoration: none;
+  margin: 0.25rem 0;
+}
+
 /* Mobile */
 .mobile{
   display: none;
@@ -111,5 +150,22 @@ h1{
   .cta .button{
     margin-top: 0.5rem;
     margin-bottom: 0;
+  }
+
+  /* Information */
+  .main-info-articles, .info img.mobile{
+    width: 100%;
+  }
+  .info:nth-child(2n+0), .main-info-articles{
+    border: none 0 gray;
+  }
+  .info{
+    margin-bottom: 2rem;
+  }
+  .info h3, .info p, .info a{
+    margin: 0.5rem 1rem;
+  }
+  .info h3{
+    margin-top: 0.75rem;
   }
 }
