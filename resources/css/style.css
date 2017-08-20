@@ -2,12 +2,25 @@
 html{
   font-size: 16px;
 }
+h1, h2, h3{
+  font-weight: bold;
+}
+h1{
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
 
-.flex, .flex-align-center{
+
+.flex, .flex-align-center, .flex-column-space-between{
   display: flex;
 }
 .flex-align-center{
   align-items: center;
+}
+.flex-column-space-between{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Header */
@@ -30,6 +43,33 @@ html{
   margin-right: 0;
 }
 
+/* Main area */
+
+.featured{
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+/* Call to action */
+.cta{
+  background-color: lightgray;
+}
+.cta div{
+  width: 25%;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.cta div p, .cta .button{
+  margin: 0.7rem 0;
+}
+.cta .button{
+  text-decoration: none;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 0.5rem 0;
+}
+
 /* Mobile */
 .mobile{
   display: none;
@@ -45,5 +85,31 @@ html{
   /* Header */
   .top-bar.mobile{
     display: flex;
+  }
+
+  /* Main */
+
+  /* CTA */
+  .cta{
+    flex-direction: column;
+  }
+  .cta .featured{
+    width: 100%;
+    margin: 0;
+  }
+  .cta div{
+    width: inherit;
+    margin: 1rem 2rem;
+    max-width: 100%;
+  }
+  .cta h1{
+    margin-top: 0;
+  }
+  .cta p{
+    margin: 1rem 0;
+  }
+  .cta .button{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
   }
 }
