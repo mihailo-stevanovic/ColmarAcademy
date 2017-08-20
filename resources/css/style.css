@@ -1,6 +1,7 @@
 /* Basic setup */
 html{
   font-size: 16px;
+  border-color: lightgray;
 }
 h1, h2, h3{
   font-weight: bold;
@@ -17,7 +18,9 @@ h3{
   font-size: 1.75rem;
   margin: 0.25rem 0;
 }
-
+.secondary, .secondary-hover:hover{
+  background-color: lightgray;
+}
 
 .flex, .flex-align-center, .flex-column-space-between{
   display: flex;
@@ -59,9 +62,6 @@ h3{
 }
 
 /* Call to action */
-.cta{
-  background-color: lightgray;
-}
 .cta div{
   width: 25%;
   font-size: 1.2rem;
@@ -79,6 +79,9 @@ h3{
 }
 
 /* Information */
+.main-info{
+  margin-bottom: 2rem;
+}
 .main-info article.featured p.quote-author{
   font-size: 0.9rem;
   margin-top: 1rem;
@@ -89,24 +92,52 @@ h3{
 .main-info-articles{
   width: 40%;
   margin: 1rem 0;
-  border-left: solid 1px gray;
+  border-left: solid 1px lightgray;
 }
 .info{
   padding: 1rem;
 }
 .info:nth-child(2n+0){
-  border-top: double 0.2rem gray;
-  border-bottom: double 0.2rem gray;
+  border-top: double 0.2rem lightgray;
+  border-bottom: double 0.2rem lightgray;
 }
 .info img.desktop{
   max-width: 35%;
   height: auto;
   margin-right: 1rem;
-
 }
 .info p, .info a{
   text-decoration: none;
   margin: 0.25rem 0;
+}
+/* Courses */
+.courses{
+  padding: 2rem 0;
+}
+.courses h2{
+  text-align: center;
+  margin: 0 auto;
+}
+.course-list{
+  margin: 2rem 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.course{
+  margin: 2rem;
+  max-width: 25%;
+  background-color: #ffffff;
+  padding-bottom: 2.5rem;
+}
+.course img{
+  width: 100%;
+}
+.course h3{
+  margin: 1rem 1.5rem;
+}
+.course p{
+  margin: 0.5rem 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* Mobile */
@@ -153,6 +184,9 @@ h3{
   }
 
   /* Information */
+  .main-info, .main-info-articles{
+    margin-bottom: 0;
+  }
   .main-info-articles, .info img.mobile{
     width: 100%;
   }
@@ -167,5 +201,27 @@ h3{
   }
   .info h3{
     margin-top: 0.75rem;
+  }
+
+  /* Courses */
+  .courses{
+    background-color: #ffffff;
+    border-top: solid 0.1rem lightgray;
+    border-bottom: solid 0.1rem lightgray;
+  }
+  .course-list{
+    margin: 1rem 1rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .course{
+    max-width: 100%;
+    background-color: lightgray;
+    padding: 1rem 0 1.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+  .course h3{
+    margin: 0;
+    font-weight: 400;
   }
 }
