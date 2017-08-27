@@ -37,8 +37,14 @@ strong{
   justify-content: space-between;
 }
 
-/* Colors */
-
+/* Colors
+  primary text: #2E2B31 - Dark Slate Gray
+  primary backgroud: #FFFCF5
+  secondary: #DBD8D2 - Light Gray
+  tertiary: #AC6232 - Sienna
+  quaternary: #586379 - Slate Gray
+  quinary: #8A7970 - Gray
+*/
 .primary, html{
   color: #2E2B31;
   background-color: #FFFCF5;
